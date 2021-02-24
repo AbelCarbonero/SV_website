@@ -1,0 +1,30 @@
+.about{
+
+   &__wrapper{
+      gap: 5rem;
+
+   }
+
+   &__img{
+     justify-self: center;
+     margin-top: 1rem;
+
+     h3{
+        font-weight: 400;
+     }
+
+     p{
+        font-weight: 300;
+     }
+   }
+
+   &__description{
+      text-align: justify;
+      line-height: 1.8;
+      max-width: 55ch;
+      justify-self: center;
+      align-self: flex-start;
+      
+     
+   }
+}

@@ -1,0 +1,48 @@
+.heading-1 {
+  font-family: $ff-primary;
+  font-size: 3.6rem;
+  color: $black;
+  font-weight: 700;
+  
+}
+
+.heading-2 {
+  font-family: $ff-primary;
+  font-size: 2.4rem;
+  color: $black;
+  line-height: 1.1;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.heading-3 {
+  font-family: $ff-primary;
+  font-size: 1.8rem;
+  color: $clr-dark;
+  line-height: 1.2;
+}
+
+
+
+.font-text--light {
+  font-weight: 300 ;
+}
+
+
+.section-title{
+  position: relative;
+  text-transform: uppercase;
+  
+  &::after{
+     content: '';
+     position: absolute;
+     bottom: -3rem;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: $clr-primary;
+     width: 6rem;
+     height: .6rem;
+  }
+}

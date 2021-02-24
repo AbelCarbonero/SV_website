@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  height: $header-height;
+  background-color: $white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: .3s;
+  
+  //When scroll
+  &.sticky{
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,0.09);
+    height: 8rem;
+    
+    
+
+    & .nav__logo{
+      font-size: 1.2rem;
+      
+    }
+    
+  }
+
+
+  .nav {
+    width: 100%;
+    padding: 1.4rem 0;
+
+    &__logo {
+      font-size: 2rem;
+      color: $black;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+      transition: .3s;
+
+      
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__item {
+      padding: 0.2;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.35rem;
+      padding: .5rem 0;
+      display: inline-block;
+      color: $clr-dark;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+      position: relative;
+      
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        bottom: -1rem;
+
+        background-color: $clr-dark;
+        transition: all 0.25s ease-in;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+
+      &:active {
+        color: $ff-primary;
+      }
+    }
+  }
+}
+
+//* HERO SECTION
+
+.hero {
+  position: relative;
+  height: calc(100vh - $header-height);
+  margin-top: $header-height;
+  padding: 2rem 0;
+  z-index: -1;
+
+  &__description {
+    align-items: center;
+    justify-self: center;
+
+    p{
+      color: $clr-dark;
+    }
+  }
+
+  &__img {
+    max-width: 76%;
+    justify-self: center;
+  }
+}

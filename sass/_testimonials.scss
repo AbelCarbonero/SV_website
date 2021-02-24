@@ -1,0 +1,48 @@
+.testimonials{
+   
+   //testimonial boxes container
+   &__wrapper{
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 5rem;
+      padding: 4rem 0;
+      
+   }
+   //quote svg div
+   &__quote{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+      svg{
+         width: 5.5rem;
+         height: 5.5rem;
+         fill: $clr-primary;
+      }
+
+   }
+   //testimonial box div
+   .testimonial{
+      padding: 0 1rem;
+      display: grid;
+      grid-template-rows: 1fr min-content;
+      
+      
+      //opinion
+      &__content{
+         font-weight: 300;
+         grid-row: 1/2;
+         font-style: italic;
+         max-width: 55ch;
+         line-height: 1.75;
+         text-align: justify;
+      }
+      //name and position
+      &__description{
+        grid-row: 2/3;
+        align-content: flex-end;
+        justify-content: flex-end;
+      }
+   }
+}
