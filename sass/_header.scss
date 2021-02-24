@@ -72,9 +72,7 @@
         transition: all 0.25s ease-in;
       }
 
-      &:hover::before {
-        width: 100%;
-      }
+     
 
       &:active {
         color: $ff-primary;
